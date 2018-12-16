@@ -16,7 +16,7 @@ How-to:
 - Mirror client to PC
 - Replace images in /images/ folder with your own screenshots (use Windows rectangular snipping tool). Why? your resolution/colors/scaling might be different to mine, and the code might not find the elements on your screen.  
 - The pyautogui library will try finding on your screen the elements you screenshotted.
-- Run main.py
+- Run main.py (I suggest a proper IDE like PyCharm, but IDLE or command prompt will work too)
 
 Tips:
 - When running be careful to only run a single instance at a time.
