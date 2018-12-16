@@ -6,7 +6,7 @@ from time import gmtime, strftime
 import pyautogui
 
 
-def lookForActions(upgradeBuildingAndResearch=False):
+def lookForActions(upgradeBuildings=False):
     numberOfRewardClaims = 0
     numberOfPeopleHelped = 0
     numberOfResourcesCollected = 0
@@ -62,28 +62,28 @@ def lookForActions(upgradeBuildingAndResearch=False):
                     pyautogui.click(actionFound[0], actionFound[1])
                     numberOfResourcesCollected += 1
                     time.sleep(1)
-                elif 'goButton' in filePath:
-                    clickOnCoordinates(actionFound)
-                    print("Go button found")
-                    if not upgradeBuildingAndResearch:
-                        print("Skipping upgrading buildings and doing research")
-                        continue
-                    for n in range(2):
-                        buildingUpgradeButton = pyautogui.locateCenterOnScreen("images/upgradeButton.PNG")
-                        if clickOnCoordinates(buildingUpgradeButton):
-                            print("Upgrading building")
-                            buildingsUpgraded += 1
-                            continue
-                        researchAvailable = pyautogui.locateCenterOnScreen("images/researchAvailable.PNG")
-                        clickOnCoordinates(researchAvailable)
-                        startButton=pyautogui.locateCenterOnScreen("images/researchStartButton.PNG")
-                        clickOnCoordinates(startButton)
-                        time.sleep(1)
-                        crossButton=pyautogui.locateCenterOnScreen("images/crossButton.PNG")
-                        if clickOnCoordinates(crossButton):
-                            print("Researching next thing")
-                            researchDone += 1
-                        clickBackButton()
+                # elif 'goButton' in filePath:
+                #     clickOnCoordinates(actionFound)
+                #     print("Go button found")
+                #     if not upgradeBuildings:
+                #         print("Skipping upgrading buildings and doing research")
+                #         continue
+                #
+                #     buildingUpgradeButton = pyautogui.locateCenterOnScreen("images/upgradeButton.PNG")
+                #     if clickOnCoordinates(buildingUpgradeButton):
+                #         print("Upgrading building")
+                #         buildingsUpgraded += 1
+                #         continue
+                #     researchAvailable = pyautogui.locateCenterOnScreen("images/researchAvailable.PNG")
+                #     clickOnCoordinates(researchAvailable)
+                #     startButton=pyautogui.locateCenterOnScreen("images/researchStartButton.PNG")
+                #     clickOnCoordinates(startButton)
+                #     time.sleep(1)
+                #     crossButton=pyautogui.locateCenterOnScreen("images/crossButton.PNG")
+                #     if clickOnCoordinates(crossButton):
+                #         print("Researching next thing")
+                #         researchDone += 1
+                #     clickBackButton()
                 elif "askForHelp" in filePath:
                     clickOnCoordinates(actionFound)
                     print("Asked for help")
