@@ -39,9 +39,9 @@ def lookForActions(upgradeBuildings=False):
             clickBackButton()
 
         for filePath in topLevelImages:
-            time.sleep(1)
+            time.sleep(2)
             print("Looking for " + filePath + "...")
-            actionFound = pyautogui.locateCenterOnScreen(filePath, confidence=0.85)
+            actionFound = pyautogui.locateCenterOnScreen(filePath, confidence=0.92)
             if actionFound is not None:
                 print("-----------------------------------")
                 print(str(filePath) + " found at " + strftime("%H:%M:%S\t", gmtime()))
@@ -59,9 +59,9 @@ def lookForActions(upgradeBuildings=False):
 
                 elif 'resource_' in filePath:
                     print("Clicking on " + str(actionFound))
-                    pyautogui.click(actionFound[0], actionFound[1])
+                    clickOnCoordinates(actionFound)
                     numberOfResourcesCollected += 1
-                    time.sleep(1)
+                    time.sleep(2)
                 # elif 'goButton' in filePath:
                 #     clickOnCoordinates(actionFound)
                 #     print("Go button found")
