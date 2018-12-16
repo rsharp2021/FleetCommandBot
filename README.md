@@ -1,7 +1,9 @@
 # FleetCommandBot
 Shitty bot for Star Trek Fleet Command
 
-This is a prototype. Don't expect it to work flawlessly.
+This is a prototype. Expect it to barely work
+
+To collect the base resources they must be in view. I suggest setting your location as shown in image/idealLocation
 
 Capabilities:
 - Collect base resources
@@ -12,10 +14,11 @@ Capabilities:
 - Provide help
 
 How-to:
-- Mirror client to PC
+- Install newest Python client (make sure to check the 'add to PATH' box during installation)
+- Mirror app client screen to PC, or use an emulator. As long as the game is on your screen and you can control it with the mouse
 - Replace images in /images/ folder with your own screenshots (use Windows rectangular snipping tool). Why? your resolution/colors/scaling might be different to mine, and the code might not find the elements on your screen.  
 - The pyautogui library will try finding on your screen the elements you screenshotted.
-- Run main.py
+- Run main.py (I suggest a proper IDE like PyCharm, but IDLE or command prompt will work too)
 
 Tips:
 - When running be careful to only run a single instance at a time.
