@@ -13,7 +13,7 @@ Capabilities:
 
 How-to:
 - Install newest Python client (make sure to check the 'add to PATH' box during installation)
-- Mirror client to PC
+- Mirror app client screen to PC, or use an emulator. As long as the game is on your screen and you can control it with the mouse
 - Replace images in /images/ folder with your own screenshots (use Windows rectangular snipping tool). Why? your resolution/colors/scaling might be different to mine, and the code might not find the elements on your screen.  
 - The pyautogui library will try finding on your screen the elements you screenshotted.
 - Run main.py (I suggest a proper IDE like PyCharm, but IDLE or command prompt will work too)
