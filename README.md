@@ -1,6 +1,8 @@
 # FleetCommandBot
 Shitty bot for Star Trek Fleet Command
 
+This is a prototype. Don't expect it to work flawlessly.
+
 Capabilities:
 - Collect base resources
 - Collect timed reward crates
