@@ -1,7 +1,7 @@
 # FleetCommandBot
 Shitty bot for Star Trek Fleet Command
 
-This is a prototype. Don't expect it to work flawlessly.
+This is a prototype. Expect it to barely work
 
 Capabilities:
 - Collect base resources
