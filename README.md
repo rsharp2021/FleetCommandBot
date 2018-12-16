@@ -3,6 +3,8 @@ Shitty bot for Star Trek Fleet Command
 
 This is a prototype. Expect it to barely work
 
+To collect the base resources they must be in view. I suggest setting your location as shown in image/idealLocation
+
 Capabilities:
 - Collect base resources
 - Collect timed reward crates
