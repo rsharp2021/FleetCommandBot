@@ -12,6 +12,7 @@ Capabilities:
 - Provide help
 
 How-to:
+- Install newest Python client (make sure to check the 'add to PATH' box during installation)
 - Mirror client to PC
 - Replace images in /images/ folder with your own screenshots (use Windows rectangular snipping tool). Why? your resolution/colors/scaling might be different to mine, and the code might not find the elements on your screen.  
 - The pyautogui library will try finding on your screen the elements you screenshotted.
